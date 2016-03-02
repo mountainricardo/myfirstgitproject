@@ -4,7 +4,7 @@ gulp.task('default',function(){
 	console.log('default task');
 });
 gulp.task('oink',function(){
-	console.log('oink');
+	console.log('oink no, mañana');
 });
 gulp.task('oink2',function(){
 	console.log('oink2');

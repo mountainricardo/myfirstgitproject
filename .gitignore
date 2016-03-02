@@ -1,0 +1,5 @@
+# Include your project-specific ignores in this file
+node_modules
+bower_components
+eslint-log.txt
+scsslint-log.json
