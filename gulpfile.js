@@ -1,11 +1,20 @@
 var gulp = require('gulp');
-gulp.task('default',function(){
+var runSequence = require('run-sequence');
+var taskListing = require('gulp-task-listing');
+
+gulp.task('help', taskListing);
+
+gulp.task('default',function(callback){
 	// place for default task here
 	console.log('default task');
+    runSequence('help',
+        callback
+    );
+	
 });
 gulp.task('oink',function(){
-	console.log('oink no, mañana');
+	console.log('\noink no, mañana ...\n');
 });
 gulp.task('oink2',function(){
-	console.log('oink2');
+	console.log('\noink2\n');
 } );
